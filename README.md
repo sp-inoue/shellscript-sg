@@ -8,7 +8,7 @@ Amazon Q Developer in chat applicationsと紐づけをしたTeamsのチャネル
 ``` bash
 ssm send-command --targets Key=InstanceIds,Values=インスタンスID --document-name 作成したドキュメント名 --cloud-watch-output-config CloudWatchOutputEnabled=true,CloudWatchLogGroupName="ログを出力するファイル" --parameters OLDIP=変更前IP,NEWIP=変更後IP --region ap-northeast-1
 ```
-##　各種値
+### 各種値
 Values=インスタンスID：このshファイルが設置されているEC2インスタンスID
 --document-name：使用したいSSMドキュメントの名前
 CloudWatchLogGroupName：実行履歴を格納したいログファイルの名前
